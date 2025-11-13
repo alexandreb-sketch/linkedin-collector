@@ -1,16 +1,14 @@
-<?php
+; Custom configuration for our RSS-Bridge instance
 
-return array(
-    'cache' => 'FileCache',
+[system]
+; on active uniquement notre bridge perso
+enabled_bridges[] = LinkedInPublicBridge
+timezone = "UTC"
 
-    'cache_timeout' => 3600,
+[cache]
+; file = cache sur disque (par défaut)
+type = "file"
 
-    'debug' => false,
-
-    'whitelist' => array(
-        'mode' => 'whitelist',
-        'bridges' => array(
-            'LinkedInPublicBridge',
-        ),
-    ),
-);
+[authentication]
+; on désactive l’auth pour l’instant
+enable = false
