@@ -1,0 +1,7 @@
+# Ignorer le dossier git interne
+.git/
+
+# Divers
+.DS_Store
+.vscode/
+*.log
