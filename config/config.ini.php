@@ -1,7 +1,7 @@
 <?php
 
 // Configuration minimale RSS-Bridge
-return array(
+return [
     // Type de cache (fichier sur disque)
     'cache' => 'FileCache',
 
@@ -12,10 +12,10 @@ return array(
     'debug' => false,
 
     // Whitelist : n’autoriser que certains bridges
-    'whitelist' => array(
+    'whitelist' => [
         'mode' => 'whitelist',
-        'bridges' => array(
+        'bridges' => [
             'LinkedInPublicBridge',
-        ),
-    ),
-);
+        ],
+    ],
+];
