@@ -1,21 +1,16 @@
 <?php
 
-// Configuration minimale RSS-Bridge
-return [
-    // Type de cache (fichier sur disque)
+return array(
     'cache' => 'FileCache',
 
-    // Durée de cache en secondes (ici 1h)
     'cache_timeout' => 3600,
 
-    // Mode debug (false en prod)
     'debug' => false,
 
-    // Whitelist : n’autoriser que certains bridges
-    'whitelist' => [
+    'whitelist' => array(
         'mode' => 'whitelist',
-        'bridges' => [
+        'bridges' => array(
             'LinkedInPublicBridge',
-        ],
-    ],
-];
+        ),
+    ),
+);
